@@ -1,0 +1,8 @@
+{
+  "name": "secure-portal",
+  "version": "1.0.0",
+  "dependencies": {
+    "@vercel/kv": "^1.0.0",
+    "@supabase/supabase-js": "^2.39.0"
+  }
+}
